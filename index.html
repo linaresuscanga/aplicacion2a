@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--Grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/via1.jpg','imagenes/via.jpg','imagenes/atlixco3.jpg','imagenes/atlixco4.jpg','imagenes/atlixco5.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>SEMANA SANTA</h1>
+  </div>
+ <div data-role="main" class="ui-content">
+   <div>
+     
+   <div>
+     <img src="imagenes/portada.jpg" width="100%" height="100%"></div>
+    </div>
+  </div>
+    
+   <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Significado de Semana Santa</h2>
+         <p>Muestra el significado de Semana Santa</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Domingo de Pascua</h2>
+       <p>Muestra la informacion sobre el Domingo de Pascua</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Como se establece la Semana Santa</h2>
+       <p>Muestra la informacion como se establece la Semana Santa</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Celebracion en Atlixco</h2>
+       <p>Muestra la informacion de la celebracióm de Atlixco</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Iztapalapa</h2>
+       <p>Muestra la informacion de la celebración de Iztapalapa</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Vaticano</h2>
+       <p>Muestra la informacion de l celebración </p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Jerusalen</h2>
+       <p>Muestra la informacion de la celebracióm de Jerusalen</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Michoacán</h2>
+       <p>Muestra la informacion de la celebracióm de Michoacán</p>
+      </a>
+     </li>
+   </ul>
+   </div>
+   <div data-role="footer" align="center" data-theme="a">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Dos</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div> 
+      
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Significado de Semana Santa</h1>
+     </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>Semana Santa, conocida como semana mayor, es un período de 7 días que comienza con el domingo de Ramos y culmina con el Domingo de Resurrección. Con la Semana Santa, el cristiano conmemora el Triduo Pascual, es decir, los momentos de la Pasión, la Muerte y la Resurrección de Jesucristo.
+La Semana Santa está precedida por la Cuaresma que se refiere al tiempo de preparación donde se recuerda los 40 días de Jesucristo en el desierto.</p>
+<div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Dar clic para mas informacion</h1>
+
+<br>
+<p>Jueves Santo
+Como tal, el Jueves Santo celebra la última cena de Jesús de Nazaret con sus discípulos, la institución de la eucaristía, la orden sacerdotal y, el lavatorio de pies. En este día, los católicos realizan la visita de los siete templos o iglesias, con el objetivo de agradecer a Dios el don de la eucaristía y sacerdocio.</p>
+ <center><img src="imagenes/juevessanto.jpg" width="504" height="504"></center>
+ <br>
+<p>Viernes Santo
+El Viernes Santo, recuerda la Pasión de Cristo, momento de su crucifixión en el Calvario, por salvar al hombre del pecado y darle vida entera. Se celebra con un viacrucis y con la adoración de la Cruz.</p>
+<center><img src="imagenes/viernessanto.jpg" width="504" height="504"></center>
+ <br>
+<p>Sábado Santo
+Se conoce como sábado Santo el día entre la muerte y la resurrección de Jesús. En este día, se lleva a cabo una vigilia pascual, en la cual se acostumbra bendecir el agua y encender las velas en señal de la Resurrección de Jesús.</p>
+ <center><img src="imagenes/sabadosanto.jpg" width="504" height="504"></center>
+ <br>
+Domingo Santo
+El Domingo Santo, conocido como Domingo de Pascua. En el Domingo Santo, se conmemora la resurrección de Jesucristo al tercer día después de su crucifixión y, su primera aparición a los discípulos. Este día es de suma alegría para los fieles y, es interpretado como la esperanza de una nueva vida.
+<p>Domingo de Ramos es el último día de la Cuaresma y el primer día de Semana Santa. En el Domingo de Ramos, los cristianos conmemoran la entrada de Jesús en Jerusalén, montado en un asno, aclamado como hijo de Dios, días antes de su pasión, muerte y resurrección.</p>
+ <center><img src="imagenes/domingosanto.jpg" width="504" height="504"></center>
+ <br>
+ 
+   </div>
+   </div>
+    </div>
+   </div>
+   <div data-role="footer" data-theme="a">
+    <h4>Diana Linares Uscanga</h4>
+   </div>
+</div>
+  
+    
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a"> 
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Celebración de Domingo de Pascua</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+    <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Dar clic para mas informacion</h1>
+    <p><center><img src="imagenes/domingodepascuas.jpg" width="504" height="504"></center>
+    El "Domingo de Pascua" es una fiesta móvil, el día varía cada año y no se fija en relación al calendario civil, y sucede después de la primera luna llena en el inicio de la primavera en el hemisferio Norte. La Pascua siempre se celebra entre el 22 de Marzo y el 25 de Abril, se celebra en varios países y en cada uno posee un nombre diferente, como por ejemplo: los portugueses la llaman Páscoa, los italianos la llaman Pasqua, y los franceses Pâques.
+La Pascua también llamada Pascua Florida, Domingo de Pascua, Domingo de Resurrección o Domingo de Gloria es la fiesta central del cristianismo , en la que se conmemora, de acuerdo con los evangelios canónicos, la resurrección de Jesús al tercer día después de haber sido crucificado.
+
+La Pascua marca el final de la Semana Santa, en la que se conmemora la crucifixión y muerte de Jesús. A la Semana Santa le sigue un período de cincuenta días llamado Tiempo pascual, que termina con el Domingo de Pentecostés.
+
+El Domingo de Pascua es una celebración que no se fija en relación al calendario civil.  El Primer Concilio de Nicea (año 325) estableció la fecha de la Pascua como el primer domingo después de la luna llena tras el equinoccio de primavera en el hemisferio norte.  La fecha por tanto, varía entre el 22 de marzo y el 25 de abril. El cristianismo oriental basa sus cálculos en el calendario juliano, por lo que su fecha se sitúa entre el 4 de abril y 8 de mayo.
+
+Durante este día se celebran en distintos lugares del mundo procesiones religiosas, así como celebraciones litúrgicas. Las costumbres del Domingo de Resurrección varían en todo el mundo cristiano, pero la decoración de los huevos de Pascua es algo común en muchos países del mundo occidental.
+    </p>
+    </div>
+    </div>
+    </div>
+  </div>
+    <div data-role="footer" data-theme="a">
+     <h4>Diana Linares Uscanga</h4>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Como se establece la Semana Santa</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+       <p>Para determinar la Semana Santa es necesario determinar que día cae el Domingo de Pascua, una fecha móvil dentro del calendario religioso.
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Dar clic para mas informacion</h1>
+
+<p>El Domingo de Pascua es el primer domingo después de la primera luna llena de primavera (primer plenilunio después del equinoccio del 21 de marzo) por lo que los Domingos de Pascua siempre estarán en el rango del 22 de marzo al 25 de abril. En caso de que el plenilunio se de en domingo, la Pascua es trasladada al siguiente domingo para así evitar que coincida con la Pascua judía.
+
+Debido al carácter móvil de la fecha las celebraciones dependientes de esta lo son también: el miércoles de Ceniza se celebra 46 días antes y da inicio a la cuaresma (40 días por que los domingos no se consideran en el cálculo), la Semana Santa inicia el domingo anterior (el Domingo de Ramos), la Ascensión se celebra cuarenta días después del domingo de Pascua y el Pentecostés 10 días más tarde.
+
+Este 2008 la Pascua se adelantó mucho y por primera vez desde 1913 se celebrará el 23 de marzo, tan solo dos días después del equinoccio. Esto sólo volverá a ocurrir en 2228.</p>
+        </div>
+       </div>
+      </div>
+  </div>
+      <div data-role="footer" data-theme="a">
+      <h4>Linares Uscanga Diana</h4>
+      </div>
+</div>
+
+      
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Celebracion en Atlixco</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+          <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Dar clic para mas informacion</h1>
+           <p>El Vía Crucis de Atlixco, en el estado mexicano de Puebla, reúne desde hace más de un siglo en Semana Santa a un grupo de penitentes capaces de traspasar el umbral del dolor por su devoción, al salir en procesión encapuchados y descalzos, con grilletes y coronas de espinas.</p>
+           
+        <br>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/via1.jpg',1)"><img src="imagenes/portada.jpg" width="100" height="100" id="Image22"></a><br>
+<p>Atlixco, un municipio situado a 30 minutos de Puebla capital y que fue nombrado recientemente Pueblo Mágico, acogió hoy la llamada procesión de los Engrillados, que se celebra cada Viernes Santo en medio de gran expectación.
+       <br>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/via.jpg',1)"><img src="imagenes/portada.jpg" width="100" height="100" id="Image23"></a>
+        <br>
+<p>Las principales calles de este municipio situado a unos 150 kilómetros por carretera de la capital mexicana, se cubren con alfombras decorativas elaboradas con serrín de colores en un recorrido de cinco kilómetros que comienza en el Exconvento de San Francisco.
+  <br>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('hjhj','','imagenes/atlixco5.jpg',1)"><img src="imagenes/portada.jpg" width="100" height="100" id="hjhj"></a>
+<p><br>
+  
+<p>Con un paso lento y quejumbroso, cientos de hombres semidesnudos y encadenados caminan en busca del perdón divino a través del dolor.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/atlixco3.jpg',1)"><img src="imagenes/portada.jpg" width="100" height="200" id="Image24"></a><br>
+       
+        <br> 
+        <p>La mayoría son originarios de ese municipio poblano, aunque cada año llegan más participantes de diferentes partes del país como Matamoros, Tlaxcala o Guadalajara, e incluso desde Estados Unidos, en este último caso para cumplir con su penitencia tras vivir el sueño americano.</p>
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('porta','','imagenes/atlixco4.jpg',1)"><img src="imagenes/portada.jpg" width="100" height="200" id="porta"></a><br>
+        </p>
+          
+        </div>
+          </div> 
+        </div> 
+      </div>
+      <div data-role="footer" data-theme="a">
+       <h4>Linares Uscanga Diana </h4>
+  </div>
+</div>
+       
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Celebración en Iztapalapa</h1>
+        </div>
+        <div data-role="content" align="center">
+        <div>
+         <p><center><img src="imagenes/izta.jpg" width="504" height="504"></center>En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización.
+         <br> 
+         <center><img src="imagenes/izta2.jpg" width="504" height="504"></center>
+         Iztapalapa, una de las 16 delegaciones que constituyen el Distrito Federal, ha sustituido sus canales, chinampas y trajineras con verduras y flores, por ejes viales y el Metro. Tiene en el Cerro de la Estrella, en sus templos, plazas y jardines de Ia cabecera, los espacios sagrados donde se escenifica cada año la representación ritual por excelencia.
+         <br>
+         <center><img src="imagenes/izta1.jpg" width="504" height="504"></center>
+          La coexistencia de Iztapalapa con la gran urbe, no ha logrado borrar Ias viejas costumbres; sus habitantes renuevan sus lazos de amistad, de compadrazgo y vecindad, de pertenencia e identidad con el barrio y con Ia localidad en las distintas fiestas de su calendario, pero es en la Semana Santa cuando éstos aparecen con mayor fuerza. </p>
+         </div>
+         <div data-role="footer" data-theme="a">
+           <h4>Linares Uscanga Diana</h4>
+          </div>
+  </div>
+</div>
+           
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Celebración en Vaticano</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+           <p>El Vaticano comenzó este miércoles con los preparativos para celebrar la primera Semana Santa que encabezará el papa Francisco y que comenzará en cuatro días con el domingo de ramos. La Plaza San Pedro amaneció hoy llena de operarios que, en un camión acoplado, trasladaron árboles de olivos, que serán colocados -junto a otros florales- en el centro de la histórica plaza. 
+       <br>
+<center><img src="imagenes/vaticano.jpg" width="504" height="504"></center>
+El papa argentino presidirá el domingo 24 a las 9.30 (hora local, 5.30 hora argentina) la tradicional celebración del domingo de ramos, con la que se inicia la Semana Santa, el tiempo litúrgico más importante para los católicos.
+<br>  
+<center><img src="imagenes/vaticano2.jpg" width="504" height="504"></center>
+Ese día se conmemora cuando Jesús entró triunfalmente en Jerusalén, aclamado como un rey por la gente con ramas y palmas de olivos que cortó de los árboles que se encontraban al lado del camino. Tradicionalmente, el Papa comparte la celebración de ese domingo con los jóvenes, porque fueron justamente los chicos hebreos los que lo recibieron con mayor entusiasmo.
+<br> 
+<center><img src="imagenes/vaticano3.jpg" width="504" height="504"></center>
+En el domingo de ramos de 1985, Juan Pablo II dedicó una carta apostólica a los jóvenes y ese mismo año instituyó las Jornadas Mundiales de la Juventud (JMJ), que se realizaron en Roma por primera vez al año siguiente, con la participación de chicos de todo el mundo. 
+</p>
+        </div> 
+      </div>
+      <div data-role="footer" data-theme="a">
+       <h4>Linares Uscanga Diana</h4>
+  </div>
+</div>
+       
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Celebración en Jerusalen</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+           <p>El periodo de la Cuaresma está llegando a su fin y tanto los cristianos locales como los miles de peregrinos que han acudido a la Ciudad Santa se están preparando para celebrar Semana Santa y su culminación en el Domingo de Resurrección, la fecha de mayor importancia del año litúrgico cristiano.
+     </p>
+     <br>
+     <img src="imagenes/jerusalen.jpg" width="40%" height="40%"> 
+     <p>
+     No hay nada como vivir la Semana Santa en Jerusalén.  Celebrar los grandes eventos de la historia de salvación y de la vida de Jesús en los mismos lugares en los que ocurrieron es una experiencia de fe conmovedora e inolvidable para todos los creyentes.
+     </p>
+     <br>
+     <img src="imagenes/jerusalen1.jpg" width="40%" height="40%"> 
+    <p>
+    Jerusalén se convierte en la Semana Santa en el epicentro del mundo cristiano y acoge a miles de devotos que buscan vivir una experiencia única siguiendo los pasos de Cristo, pero también es una ciudad con otros atractivos turísticos para el peregrino que busca algo más que los lugares santos.
+      </p>
+      <br> 
+     <img src="imagenes/jerusalen2.jpg" width="40%" height="40%"> </div>
+   </div>
+   
+<div data-role="footer" data-theme="a">
+       <h4>Linares Uscanga Diana</h4>
+</div>
+</div> 
+
+
+       
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Celebración en Michoacán</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+           <p>Esta Semana Santa, Michoacán te ofrece una extensa variedad de eventos culturales, artísticos y religiosos: El tianguis Artesanal de Uruapan, reúne a artesanos de todo el Estado y está considerado como el más grande de Latinoamérica, a él acuden compradores de arte de todo el mundo para apreciar las maravillas elaboradas por los artesanos michoacanos; la enigmática Procesión del Silencio en Morelia y otros municipios, que llena de misticismo las ciudades en todo Michoacán. la Procesión de Cristos de Pátzcuaro y los Altares de Dolores, tradicionales desde la época de la colonia.
+            <center><img src="imagenes/michoacan.jpg" width="504" height="504"></center>
+            <br>
+Mención especial merece Tzintzuntzan, el viernes por la mañana podemos observar a los “penitentes”, que salen a pagar sus promesas al Señor del Santo Entierro, castigando sus tobillos con el peso de grilletes que se dicen originales de la conquista, traídos por los europeos para esclavizar, y actualmente son objetos rigurosamente custodiados que se usan para validar una practica de expiación y manifestación de la fe a través del sacrificio corporal.
+ <center><img src="imagenes/michoacan3.jpg" width="504" height="504"></center>
+ <br>
+Por todo el estado, en cada pueblo, ciudad o tenencia se realizan magníficas representaciones del Vía Crucis, se ofrece deliciosa comida tradicional de la temporada, se venden bellas artesanías y sobre todo se disfruta la hospitalidad de este pueblo.
+Además, Michoacán cuenta con un importante numero de balnearios y parques acuáticos donde podrás disfrutar y convivir con tu familia.</p>
+           <center><img src="imagenes/michoacan2.jpg" width="504" height="504"></center>
+        </div> 
+      </div>
+      <div data-role="footer" data-theme="a">
+       <h4>Linares Uscanga Diana</h4>
+  </div>
+</div>         
+</body>
+</html>
